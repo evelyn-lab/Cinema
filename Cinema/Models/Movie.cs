@@ -7,9 +7,9 @@ public class Movie
 {
     [Key]
     [Column("name")]
-    public string Name { get; set; }
+    public string? Name { get; set; }
     [Column("genre")]
-    public string Genre { get; set; }
+    public string? Genre { get; set; }
     [Column("duration")]
     public int? Duration { get; set; }
     [Column("rating")]

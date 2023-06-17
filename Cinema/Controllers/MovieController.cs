@@ -2,8 +2,6 @@ using Cinema.Context;
 using Cinema.Models;
 using Microsoft.AspNetCore.Mvc;
 
-
-using Microsoft.EntityFrameworkCore;
 namespace Cinema.Controllers;
 // Атрибут указывает маршрут, по которому будет доступен контроллер.
 [Route("api/[controller]")]

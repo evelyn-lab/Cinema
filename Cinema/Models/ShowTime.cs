@@ -9,7 +9,7 @@ public class ShowTime
     [Column("id")]
     public int Id { get; set; }
     [Column("movie_name")]
-    public string MovieName { get; set; }
+    public string? MovieName { get; set; }
     [Column("date")]
     public DateTime Date { get; set; }
 }   
