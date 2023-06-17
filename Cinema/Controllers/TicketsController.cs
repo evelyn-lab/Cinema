@@ -30,7 +30,7 @@ public class TicketsController : Controller
         }
         else
         {
-            return Problem("ShowTime list is empty.");
+            return BadRequest("ShowTime list is empty.");
         }
         Tickets ticket= new Tickets
         {

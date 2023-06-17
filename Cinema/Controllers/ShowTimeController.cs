@@ -48,7 +48,7 @@ public class ShowTimeController : ControllerBase
         }
         else
         {
-            return Problem("Movie list is empty.");
+            return BadRequest("Movie list is empty.");
         }
 
         ShowTime showTime = new ShowTime

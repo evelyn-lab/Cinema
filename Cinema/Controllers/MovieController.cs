@@ -39,6 +39,22 @@ public class MovieController : ControllerBase
     // Метод, создающий новый фильм на основе переданных данных
     public async Task<ActionResult<Movie>> PostMovie(MovieInput input)
     {
+        /*String[] genres =
+        {
+            "sci-fi", "family", "comedy", "action", "horror", "drama", "thriller",
+            "action", "documentary", "mystery"
+        };*/
+
+        if (input.Duration <= 0)
+        {
+            return BadRequest("Wrong duration.");
+        }
+        
+        if (input.Rating < 0)
+        {
+            return BadRequest("Wrong rating.");
+        }
+        
         Movie movie = new Movie
         {
             Name = input.Name,
